@@ -1,0 +1,36 @@
+
+.section {
+    padding: 60px 0;
+
+
+    &--no-padding-top {
+        padding-top: 0;
+    }
+
+   &--other-bg {
+       background-color: #f5f4fa;
+   }
+   @media screen and (min-width:1200px) {
+       padding: 94px 0;
+       
+   }
+}
+
+
+.section__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    
+    &--hidden {
+        opacity: 0;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        line-height: 42px;
+        }
+}

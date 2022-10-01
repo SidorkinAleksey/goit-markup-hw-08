@@ -1,0 +1,13 @@
+.header {
+    border-bottom: 1px solid #ececec;
+
+    &__container {
+    display: flex;
+    align-items: center;
+ }
+ 
+ &__item:last-child {
+    margin-right: 0;
+ }
+
+}

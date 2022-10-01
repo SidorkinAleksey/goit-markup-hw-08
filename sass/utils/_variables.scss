@@ -1,0 +1,17 @@
+:root {
+    --main-text-color: #757575;
+
+    --accent-color: #2196f3;
+    --change-active-cl: #188ce8;
+
+    --border-card-cl: #ececec;
+    --icon-card-cl: #f5f4fa;
+    --icon-client-cl: #afb1b8;
+    --white-text-color: #fff;
+    --secondary-text-color: #212121;
+    --cubic-bizier-time: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active {
+    color: var(--accent-color);
+}

@@ -1,0 +1,21 @@
+.form__close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    right: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+
+    border: 1px solid #0000001a;
+
+    &:hover,
+    &:focus {
+    fill: var(--accent-color);
+    }
+}
+
