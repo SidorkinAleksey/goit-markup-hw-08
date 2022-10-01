@@ -63,6 +63,16 @@ img {
   height: auto;
 }
 
+header,
+footer,
+section {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
 h1,
 h2,
 h3,
