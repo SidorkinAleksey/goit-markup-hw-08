@@ -63,16 +63,6 @@ img {
   height: auto;
 }
 
-header,
-footer,
-section {
-  display: none;
-}
-
-.block {
-  display: block;
-}
-
 h1,
 h2,
 h3,
@@ -689,25 +679,65 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+}
 
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
 }
-
-.footer__address {
-  margin-right: 70px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+@media screen and (min-width: 768px) {
+  .footer__container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .contacts {
   font-style: normal;
+}
+@media sreen and (min-width: 786) {
+  .contacts {
+    margin-right: 165px;
+  }
 }
 
 .contacts__link {
@@ -720,7 +750,12 @@ ul {
 }
 
 .contacts__item {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    margin-bottom: 9px;
+  }
 }
 
 .contacts__item:last-child {
@@ -731,11 +766,14 @@ ul {
   color: var(--white-text-color);
 }
 
-.footer-icon {
-  margin-right: 93px;
+@media screen and (min-width: 1200px) {
+  .footer-icon {
+    margin-right: 70px;
+  }
 }
 
 .footer-icon__title {
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -748,6 +786,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
 }
 
@@ -777,6 +818,13 @@ ul {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    width: 450px;
+    text-align: center;
+  }
+}
+
 .footer-form__title {
   display: block;
   font-weight: 700;
@@ -787,27 +835,48 @@ ul {
   color: var(--white-text-color);
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-form__title {
+    text-align: start;
+  }
+}
 
 .subscribe {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .subscribe__input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 0;
   padding: 15px 16px;
   height: 50px;
-  width: 358px;
+  width: 100%;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: var(--white-text-color);
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .subscribe__input {
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe__button {
@@ -830,6 +899,11 @@ ul {
 }
 .subscribe__button:hover, .subscribe__button:focus {
   background: var(--change-active-cl);
+}
+@media screen and (max-width: 1199px) {
+  .subscribe__button {
+    margin: 0 auto;
+  }
 }
 
 .subscribe__icon {

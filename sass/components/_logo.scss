@@ -1,28 +1,24 @@
 .logo {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 
-
-    &__dark {
-        color: #000;
-    }
-
-
+  &__dark {
+    color: #000;
+  }
 }
 
 .footer .logo {
-    display: inline-block;
-    color: var(--accent-color);
-    margin-bottom: 20px;
-    padding: 0;
+  display: inline-block;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+  padding: 0;
 }
 .footer__logo {
-    color: var(--white-text-color);
+  color: var(--white-text-color);
 }
- 
