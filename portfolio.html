@@ -9,17 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <!-- Morden-normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-      <link rel="stylesheet" href="./css/main.min.css" />
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
+
   <body>
     <header class="header">
       <div class="header__container container">
@@ -35,9 +38,7 @@
               <a href="./index.html" class="nav__link link">Студія</a>
             </li>
             <li class="nav__item">
-              <a
-                href="./portfolio.html"
-                class="nav__link nav__link--active nav__link--current link"
+              <a href="./portfolio.html" class="nav__link nav__link--active nav__link--current link"
                 >Портфоліо</a
               >
             </li>
@@ -69,9 +70,9 @@
       </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section block">
         <div class="container">
-          <h1 class="section__title  section__title--hidden">наши проэкты</h1>
+          <h1 class="section__title section__title--hidden">наши проэкты</h1>
           <!-- Project -->
           <ul class="project">
             <li><button class="project__button" type="button">Усі</button></li>
@@ -84,25 +85,37 @@
               <button class="project__button" type="button">Маркетинг</button>
             </li>
           </ul>
-          
+
           <!-- Web -->
-          <ul class="web">
+          <ul class="web block">
             <li class="web__item">
               <a class="web__link" href="">
                 <div class="web__inform">
-                  <img
-                    class="web__img"
-                    src="./imegens/Web Studio/img1.jpg"
-                    alt=""
-                    width="370px"
-                    height="294px" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./imegens/Web/img-9_des@1x.jpg 1x, ./imegens/Web/img-9_des@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./imegens/Web/img-9_tab@1x.jpg 1x, ./imegens/Web/img-9_tab@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./imegens/Web/img-9_mob@1x.jpg 1x, ./imegens/Web/img-9_mob@2x.jpg 2x"
+                    />
+
+                    <img class="web__img" src="./imegens/Web/img-9_des@1x.jpg 1x" alt="" />
+                  </picture>
 
                   <div class="web__thumb">
                     <p class="web__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                 </div>
@@ -116,18 +129,31 @@
             <li class="web__item">
               <a class="web__link" href="">
                 <div class="web__inform">
-                  <img
-                    class="web__img"
-                    src="./imegens/Web Studio/img2.jpg"
-                    alt=""
-                    width="370px"
-                    height="294px" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./imegens/Web/img-8_des@1x.jpg 1x, ./imegens/Web/img-8_des@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./imegens/Web/img-8_tab@1x.jpg 1x, ./imegens/Web/img-8_tab@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./imegens/Web/img-8_mob@1x.jpg 1x, ./imegens/Web/img-8_mob@2x.jpg 2x"
+                    />
+
+                    <img class="web__img" src="" alt="./imegens/Web/img-8_des@1x.jpg 1x" />
+                  </picture>
+
                   <div class="web__thumb">
                     <p class="web__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                 </div>
@@ -140,18 +166,31 @@
             <li class="web__item">
               <a class="web__link" href="">
                 <div class="web__inform">
-                  <img
-                    class="web__img"
-                    src="./imegens/Web Studio/img3.jpg"
-                    alt=""
-                    width="370px"
-                    height="294px" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./imegens/Web/img-7_des@1x.jpg 1x, ./imegens/Web/img-7_des@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./imegens/Web/img-7_tab@1x.jpg 1x, ./imegens/Web/img-7_tab@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./imegens/Web/img-7_mob@1x.jpg 1x, ./imegens/Web/img-7_mob@2x.jpg 2x"
+                    />
+
+                    <img class="web__img" src="./imegens/Web/img-7_des@1x.jpg 1x" alt="" />
+                  </picture>
+
                   <div class="web__thumb">
                     <p class="web__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                 </div>
@@ -165,18 +204,31 @@
             <li class="web__item">
               <a class="web__link" href="">
                 <div class="web__inform">
-                  <img
-                    class="web__img"
-                    src="./imegens/Web Studio/img4.jpg"
-                    alt=""
-                    width="370px"
-                    height="294px" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./imegens/Web/img-6_des@1x.jpg 1x, ./imegens/Web/img-6_des@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./imegens/Web/img-6_tab@1x.jpg 1x, ./imegens/Web/img-6_tab@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./imegens/Web/img-6_mob@1x.jpg 1x, ./imegens/Web/img-6_mob@2x.jpg 2x"
+                    />
+
+                    <img class="web__img" src="./imegens/Web/img-6_des@1x.jpg 1x" alt="" />
+                  </picture>
+
                   <div class="web__thumb">
                     <p class="web__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                 </div>
@@ -190,18 +242,31 @@
             <li class="web__item">
               <a class="web__link" href="">
                 <div class="web__inform">
-                  <img
-                    class="web__img"
-                    src="./imegens/Web Studio/img5.jpg"
-                    alt=""
-                    width="370px"
-                    height="294px" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./imegens/Web/img-5_des@1x.jpg 1x, ./imegens/Web/img-5_des@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./imegens/Web/img-5_tab@1x.jpg 1x, ./imegens/Web/img-5_tab@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./imegens/Web/img-5_mob@1x.jpg 1x, ./imegens/Web/img-5_mob@2x.jpg 2x"
+                    />
+
+                    <img class="web__img" src="./imegens/Web/img-5_des@1x.jpg 1x" alt="" />
+                  </picture>
+
                   <div class="web__thumb">
                     <p class="web__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                 </div>
@@ -214,18 +279,31 @@
             <li class="web__item">
               <a class="web__link" href="">
                 <div class="web__inform">
-                  <img
-                    class="web__img"
-                    src="./imegens/Web Studio/img6.jpg"
-                    alt=""
-                    width="370px"
-                    height="294px" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./imegens/Web/img-4_des@1x.jpg 1x, ./imegens/Web/img-4_des@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./imegens/Web/img-4_tab@1x.jpg 1x, ./imegens/Web/img-4_tab@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./imegens/Web/img-4_mob@1x.jpg 1x, ./imegens/Web/img-4_mob@2x.jpg 2x"
+                    />
+
+                    <img class="web__img" src="./imegens/Web/img-4_des@1x.jpg 1x" alt="" />
+                  </picture>
+
                   <div class="web__thumb">
                     <p class="web__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                 </div>
@@ -238,18 +316,31 @@
             <li class="web__item">
               <a class="web__link" href="">
                 <div class="web__inform">
-                  <img
-                    class="web__img"
-                    src="./imegens/Web Studio/img7.jpg"
-                    alt=""
-                    width="370px"
-                    height="294px" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./imegens/Web/img-3_des@1x.jpg 1x, ./imegens/Web/img-3_des@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./imegens/Web/img-3_tab@1x.jpg 1x, ./imegens/Web/img-3_tab@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./imegens/Web/img-3_mob@1x.jpg 1x, ./imegens/Web/img-3_mob@2x.jpg 2x"
+                    />
+
+                    <img class="web__img" src="./imegens/Web/img-3_des@1x.jpg 1x" alt="" />
+                  </picture>
+
                   <div class="web__thumb">
                     <p class="web__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                 </div>
@@ -262,18 +353,31 @@
             <li class="web__item">
               <a class="web__link" href="">
                 <div class="web__inform">
-                  <img
-                    class="web__img"
-                    src="./imegens/Web Studio/img8.jpg"
-                    alt=""
-                    width="370px"
-                    height="294px" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./imegens/Web/img-2_des@1x.jpg 1x, ./imegens/Web/img-2_des@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./imegens/Web/img-2_tab@1x.jpg 1x, ./imegens/Web/img-2_tab@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./imegens/Web/img-2_mob@1x.jpg 1x, ./imegens/Web/img-2_mob@2x.jpg 2x"
+                    />
+
+                    <img class="web__img" src="./imegens/Web/img-2_des@1x.jpg 1x" alt="" />
+                  </picture>
+
                   <div class="web__thumb">
                     <p class="web__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                 </div>
@@ -286,18 +390,31 @@
             <li class="web__item">
               <a class="web__link" href="">
                 <div class="web__inform">
-                  <img
-                    class="web__img"
-                    src="./imegens/Web Studio/img9.jpg"
-                    alt=""
-                    width="370px"
-                    height="294px" />
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./imegens/Web/img-1_des@1x.jpg 1x, ./imegens/Web/img-1_des@2x.jpg 2x"
+                    />
+                    <!-- Tablet -->
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./imegens/Web/img-1_tab@1x.jpg 1x, ./imegens/Web/img-1_tab@2x.jpg 2x"
+                    />
+                    <!-- Mobile -->
+                    <source
+                      media="(min-width: 480px)"
+                      srcset="./imegens/Web/img-1_mob@1x.jpg 1x, ./imegens/Web/img-1_mob@2x.jpg 2x"
+                    />
+
+                    <img class="web__img" src="./imegens/Web/img-1_des@1x.jpg 1x" alt="" />
+                  </picture>
+
                   <div class="web__thumb">
                     <p class="iweb__text">
-                      Ресурс пропонує комплексні пропозиції з різним рівнем
-                      функціоналу та сервісів. Все це дозволить відвідувачу
-                      отримати вичерпні відомості про компанію чи приватну
-                      особу.
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
                     </p>
                   </div>
                 </div>
@@ -311,13 +428,11 @@
         </div>
       </section>
     </main>
-   <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__address">
           <!-- footer logo -->
-          <a class="logo link" href="./index.html"
-            >Web<span class="footer__logo">Studio</span></a
-          >
+          <a class="logo link" href="./index.html">Web<span class="footer__logo">Studio</span></a>
           <!-- contacts -->
           <address class="contacts">
             <ul class="contacts__items">
@@ -334,9 +449,7 @@
                 >
               </li>
               <li class="contacts__item">
-                <a class="contacts__link link" href="tel:380961111111"
-                  >+38 096 111 11 11</a
-                >
+                <a class="contacts__link link" href="tel:380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
@@ -352,7 +465,8 @@
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="instagram">
+                aria-label="instagram"
+              >
                 <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./imegens/symbol-defs.svg#icon-instagram"></use>
                 </svg>
@@ -364,7 +478,8 @@
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="twitter">
+                aria-label="twitter"
+              >
                 <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./imegens/symbol-defs.svg#icon-twitter"></use>
                 </svg>
@@ -376,7 +491,8 @@
                 href="https://fasebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="fasebook">
+                aria-label="fasebook"
+              >
                 <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./imegens/symbol-defs.svg#icon-facebook"></use>
                 </svg>
@@ -388,7 +504,8 @@
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="linkedin">
+                aria-label="linkedin"
+              >
                 <svg class="footer-socials__icon" width="20" height="20">
                   <use href="./imegens/symbol-defs.svg#icon-linkedin"></use>
                 </svg>
@@ -397,23 +514,20 @@
           </ul>
         </div>
         <!-- footer-form -->
-        <form>
-          <label class="footer-form"></label>
+        <form class="subscribe-form">
           <span class="footer-form__title">Підпишіться на розсилку</span>
-          <!-- subscribe -->
+
           <div class="subscribe">
-          <input
-            class="subscribe__input"
-            type="mail"
-            name="subscribe"
-            placeholder="E-mail" />
+            <input class="subscribe__input" type="mail" name="name" placeholder="E-mail" />
+            <button class="subscribe__button button" type="submit">
+              Підписатися
+
+              <svg class="subscribe__icon" width="24" height="24">
+                <use href="./imegens/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
-        <button class="subscribe__button button" type="submit">
-          Підписатися
-          <svg class="subscribe__icon" width="24" height="24">
-            <use href="./imegens/symbol-defs.svg#icon-icon-send"></use>
-          </svg>
-        </button>
       </div>
     </footer>
   </body>

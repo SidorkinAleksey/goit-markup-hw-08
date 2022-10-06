@@ -6,7 +6,6 @@ body {
   letter-spacing: 0.03em;
 }
 .container {
-  // width: 1200px;
   padding: 0 15px;
 
   @media screen and (min-width: 480px) {
@@ -26,15 +25,15 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
-// header,
-// footer,
-// section {
-//   display: none;
-// }
-// .block {
-//   display: block;
-// }
+header,
+footer,
+section {
+  display: none;
+}
+.block {
+  display: block;
+}
