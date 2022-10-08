@@ -56,6 +56,20 @@
   border: 0;
   background-color: #fff;
 }
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 84px 40px 40px;
+  background-color: var(--white-color);
+  overflow-y: scroll;
+}
+.header {
+  position: relative;
+}
 // .menu-button .close-icon {
 //   display: none;
 // }
