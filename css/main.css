@@ -671,6 +671,15 @@ ul {
   fill: currentColor;
 }
 
+.menu-button {
+  display: block;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+}
+
 .button {
   display: inline-block;
   background-color: var(--accent-color);
