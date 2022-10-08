@@ -64,12 +64,19 @@
   width: 100vw;
   height: 100vh;
   padding: 48px 84px 40px 40px;
-  background-color: var(--white-color);
+  background-color: #fff;
   overflow-y: scroll;
 }
 .header {
   position: relative;
 }
+.mobile-menu__flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
 // .menu-button .close-icon {
 //   display: none;
 // }
