@@ -59,7 +59,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -289,12 +289,7 @@ ul {
 }
 
 .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .team__box {
@@ -600,7 +595,7 @@ ul {
   display: none;
 }
 
-.menu-button .js-open-menu .close-icon {
+.menu-button .js-open-menu .is-open .close-icon {
   display: block;
 }
 
