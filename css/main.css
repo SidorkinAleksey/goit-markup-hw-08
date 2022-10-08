@@ -626,6 +626,11 @@ ul {
   padding: 48px 84px 40px 40px;
   background-color: #fff;
   overflow-y: scroll;
+  display: none;
+}
+
+.is-open {
+  display: block;
 }
 
 .header {
