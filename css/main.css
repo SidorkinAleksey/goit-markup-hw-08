@@ -89,6 +89,11 @@ ul {
 .section--no-padding-top {
   padding-top: 0;
 }
+@media screen and (max-width: 1199px) {
+  .section--no-padding-top {
+    display: none;
+  }
+}
 .section--other-bg {
   background-color: #f5f4fa;
 }
@@ -581,6 +586,26 @@ ul {
 }
 .nav__link:hover, .nav__link:focus {
   color: var(--accent-color);
+}
+
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
+}
+
+.menu-button .close-icon {
+  display: none;
+}
+
+.menu-button .js-open-menu .close-icon {
+  display: block;
+}
+
+.menu-button .js-open-menu .menu-icon {
+  display: none;
 }
 
 .logo {

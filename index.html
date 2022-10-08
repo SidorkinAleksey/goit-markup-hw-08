@@ -31,40 +31,65 @@
         <a class="logo link" href="./index.html"> Web<span class="logo__dark">Studio</span></a>
 
         <!-- Nav -->
+        <div class="menu js-menu-container is-open">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="" class="nav__link nav__link--current link">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link link">Портфоліо</a>
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
 
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="" class="nav__link nav__link--current link">Студія</a>
+          <!-- AUTH -->
+          <div>
+            <ul class="auth">
+              <li class="auth__item">
+                <a class="auth__link link" href="mailto:info@devstudio.com">
+                  <svg class="auth__icon" width="16" height="12">
+                    <use href="./imegens/symbol-defs.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="auth__item">
+                <a class="auth__link link" href="tel:+380961111111">
+                  <svg class="auth__icon" width="10" height="16">
+                    <use href="./imegens/symbol-defs.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <ul>
+            <li>
+              <a href="">Instagram</a>
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link link">Портфоліо</a>
+            <li>
+              <a href="">Twitter</a>
             </li>
-            <li class="nav__item">
-              <a href="" class="nav__link link">Контакти</a>
+            <li>
+              <a href="">Facebook</a>
+            </li>
+            <li>
+              <a href="">LinkedIn</a>
             </li>
           </ul>
-        </nav>
-        <!-- AUTH -->
+        </div>
 
-        <ul class="auth">
-          <li class="auth__item">
-            <a class="auth__link link" href="mailto:info@devstudio.com">
-              <svg class="auth__icon" width="16" height="12">
-                <use href="./imegens/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="auth__item">
-            <a class="auth__link link" href="tel:+380961111111">
-              <svg class="auth__icon" width="10" height="16">
-                <use href="./imegens/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <button class="menu-button js-open-menu is-open" type="button">
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="close-icon" href="./imegens/symbol-defs 2.svg#icon-close_40px"></use>
+            <use class="menu-icon" href="./imegens/symbol-defs 2.svg#icon-menu_40px "></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- Hero -->
@@ -129,7 +154,7 @@
         </div>
       </section>
       <!-- Work  -->
-      <section class="section section--no-padding-top">
+      <section class="section section--no-padding-top block">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
           <!-- Product -->
@@ -695,5 +720,12 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
