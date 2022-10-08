@@ -596,16 +596,12 @@ ul {
   background-color: #fff;
 }
 
-.menu-button .close-icon {
-  display: none;
-}
-
-.menu-button .js-open-menu .is-open .close-icon {
-  display: block;
-}
-
-.menu-button .js-open-menu .menu-icon {
-  display: none;
+.mobile-btn {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #fff;
 }
 
 .logo {
