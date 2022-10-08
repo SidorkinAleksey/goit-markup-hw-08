@@ -54,6 +54,14 @@
   margin: 0;
   padding: 0;
   border: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: #fff;
 }
 .mobile-menu {
@@ -76,14 +84,3 @@
   justify-content: space-between;
   height: 100vh;
 }
-
-// .menu-button .close-icon {
-//   display: none;
-// }
-
-// .menu-button .js-open-menu .is-open .close-icon {
-//   display: block;
-// }
-// .menu-button .js-open-menu .menu-icon {
-//   display: none;
-// }
