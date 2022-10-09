@@ -1,5 +1,7 @@
 .team {
+  display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .team__box {

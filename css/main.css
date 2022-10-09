@@ -290,7 +290,12 @@ ul {
 }
 
 .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .team__box {
@@ -688,19 +693,22 @@ a {
   color: var(--accent-color);
 }
 
+.social-wrap__item {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding: 10px;
+}
+
+.social-wrap__item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
 .social-wrap__link {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding: 10px;
-}
-
-.social-wrap__link:last-child {
-  border-right: none;
-  padding-right: 0;
 }
 
 .contats-mobile__item {
