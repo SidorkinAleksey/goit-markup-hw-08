@@ -119,7 +119,6 @@ a {
 }
 
 .social-wrap__link {
-  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
@@ -130,8 +129,8 @@ a {
   padding: 10px;
 }
 .social-wrap__link:last-child {
-  display: block;
-  padding: 0;
+  border-right: none;
+  padding-right: 0;
 }
 
 .contats-mobile__item {
