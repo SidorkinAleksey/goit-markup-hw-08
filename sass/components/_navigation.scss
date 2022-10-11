@@ -1,5 +1,9 @@
 .nav {
   display: none;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
 }
 
 .nav {
@@ -49,6 +53,11 @@
   border: 0;
   background-color: #fff;
 }
+.menu-svg {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 
 .mobile-btn {
   margin: 0;
@@ -63,10 +72,6 @@
   justify-content: center;
 
   background-color: #fff;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 }
 .mobile-menu {
   position: fixed;
