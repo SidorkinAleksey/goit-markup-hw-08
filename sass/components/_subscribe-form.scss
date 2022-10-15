@@ -1,7 +1,6 @@
 .subscribe-form {
-  width: 450px;
-  @media screen and (min-width: 768px) {
-    text-align: center;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
   }
 }
 
@@ -15,9 +14,6 @@
   color: var(--white-text-color);
 
   margin-bottom: 20px;
-  @media screen and (min-width: 1200px) {
-    text-align: start;
-  }
 }
 
 .subscribe {
@@ -30,7 +26,6 @@
 }
 
 .subscribe__input {
-  outline: 1px solid red;
   padding: 0;
   padding: 15px 16px;
 
@@ -42,8 +37,8 @@
   border-radius: 4px;
   color: var(--white-text-color);
 
-  @media screen and (max-width: 768px) {
-    max-width: 450px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
 
   @media screen and (min-width: 1200px) {

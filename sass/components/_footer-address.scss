@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
@@ -15,7 +15,6 @@
   align-items: center;
   justify-content: space-between;
   justify-content: center;
-  gap: 60px;
 
   @media screen and (min-width: 768px) {
     justify-content: space-around;
@@ -23,6 +22,9 @@
     align-items: baseline;
 
     margin: 0 auto;
+  }
+  @media screen and (max-width: 1199px) {
+    gap: 60px;
   }
 
   @media screen and (min-width: 1200px) {

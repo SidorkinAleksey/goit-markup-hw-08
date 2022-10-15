@@ -26,9 +26,7 @@
   <body>
     <header class="header">
       <div class="header__container container">
-        <a class="logo link" href="./index.html">
-          Web<span class="logo__link--dark">Studio</span></a
-        >
+        <a class="logo link" href="./index.html"> Web<span class="logo__dark">Studio</span></a>
 
         <!-- Nav -->
 
@@ -38,15 +36,14 @@
               <a href="./index.html" class="nav__link link">Студія</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--active nav__link--current link"
-                >Портфоліо</a
-              >
+              <a href="" class="nav__link nav__link--current link">Портфоліо</a>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link link">Контакти</a>
             </li>
           </ul>
         </nav>
+
         <!-- AUTH -->
 
         <ul class="auth">
@@ -67,6 +64,69 @@
             >
           </li>
         </ul>
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <div class="mobile-menu__flex">
+            <ul class="nav-mobile">
+              <li class="nav-mobile__item">
+                <a class="nav-mobile__link" href="./index.html">Студія</a>
+              </li>
+              <li class="nav-mobile__item">
+                <a class="nav-mobile__link nav-mobile__link--active" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav-mobile__item">
+                <a class="nav-mobile__link" href="">Контакти</a>
+              </li>
+            </ul>
+            <div class="mobile-menu__wrap">
+              <ul class="contats-mobile">
+                <li class="contats-mobile__item">
+                  <a
+                    class="contats-mobile__link contats-mobile__link--active"
+                    href="tel:+380961111111"
+                    >+380961111111</a
+                  >
+                </li>
+                <li class="contats-mobile__item">
+                  <a class="contats-mobile__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="social-wrap">
+                <li class="social-wrap__item">
+                  <a class="social-wrap__link" href="">Instagram</a>
+                </li>
+                <li class="social-wrap__item">
+                  <a class="social-wrap__link" href="">Twitter</a>
+                </li>
+                <li class="social-wrap__item">
+                  <a class="social-wrap__link" href="">Facebook</a>
+                </li>
+                <li class="social-wrap__item">
+                  <a class="social-wrap__link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button class="mobile-btn js-close-menu">
+            <svg class="menu-svg" width="40" height="40">
+              <use class="close-icon" href="./imegens/symbol-defs 2.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+        </div>
+
+        <button
+          class="menu-button js-open-menu"
+          type="button"
+          aria-expanded="true"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="menu-icon" href="./imegens/symbol-defs 2.svg#icon-menu_40px "></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -95,20 +155,23 @@
                     <!-- Desktop -->
                     <source
                       media="(min-width: 1200px)"
-                      srcset="./imegens/web/img_des@1x.jpg 1x, ./imegens/web/img_des@2x.jpg 2x"
+                      srcset="./imegens/web/img_1_des@1x.jpg 1x, ./imegens/web/img_1_des@2x.jpg 2x"
                     />
                     <!-- Tablet -->
                     <source
                       media="(min-width: 768px)"
-                      srcset="./imegens/Web/img_tab@1x.jpg 1x, ./imegens/Web/img_tab@2x.jpg 2x"
+                      srcset="
+                        ./imegens/web/img-1_tab_@1x.jpg 1x,
+                        ./imegens/web/img-1_tab_@2x.jpg 2x
+                      "
                     />
                     <!-- Mobile -->
                     <source
-                      media="(min-width: 480px)"
-                      srcset="./imegens/Web/img_mob@1x.jpg 1x, ./imegens/Web/img_mob@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      srcset="./imegens/web/1_mob_@1x.jpg 1x, ./imegens/web/1_mob_@2x.jpg 2x"
                     />
 
-                    <img class="web__img" src="./imegens/web/img_des@1x.jpg 1x" alt="" />
+                    <img class="web__img" src="./imegens/web/1_mob_@1x.jpg 1x" alt="" />
                   </picture>
 
                   <div class="web__thumb">
@@ -133,20 +196,23 @@
                     <!-- Desktop -->
                     <source
                       media="(min-width: 1200px)"
-                      srcset="./imegens/Web/img-8_des@1x.jpg 1x, ./imegens/Web/img-8_des@2x.jpg 2x"
+                      srcset="./imegens/web/img_2_des@1x.jpg 1x, ./imegens/web/img_2_des@2x.jpg 2x"
                     />
                     <!-- Tablet -->
                     <source
                       media="(min-width: 768px)"
-                      srcset="./imegens/Web/img-8_tab@1x.jpg 1x, ./imegens/Web/img-8_tab@2x.jpg 2x"
+                      srcset="
+                        ./imegens/web/img-2_tab_@1x.jpg 1x,
+                        ./imegens/web/img-2_tab_@2x.jpg 2x
+                      "
                     />
                     <!-- Mobile -->
                     <source
-                      media="(min-width: 480px)"
-                      srcset="./imegens/Web/img-8_mob@1x.jpg 1x, ./imegens/Web/img-8_mob@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      srcset="./imegens/web/2_mob_@1x.jpg 1x, ./imegens/web/2_mob_@2x.jpg 2x"
                     />
 
-                    <img class="web__img" src="" alt="./imegens/Web/img-8_des@1x.jpg 1x" />
+                    <img class="web__img" src="./imegens/web/2_mob_@1x.jpg 1x" alt="" />
                   </picture>
 
                   <div class="web__thumb">
@@ -170,20 +236,23 @@
                     <!-- Desktop -->
                     <source
                       media="(min-width: 1200px)"
-                      srcset="./imegens/Web/img-7_des@1x.jpg 1x, ./imegens/Web/img-7_des@2x.jpg 2x"
+                      srcset="./imegens/web/img_3_des@1x.jpg 1x, ./imegens/web/img_3_des@2x.jpg 2x"
                     />
                     <!-- Tablet -->
                     <source
                       media="(min-width: 768px)"
-                      srcset="./imegens/Web/img-7_tab@1x.jpg 1x, ./imegens/Web/img-7_tab@2x.jpg 2x"
+                      srcset="
+                        ./imegens/web/img-3_tab_@1x.jpg 1x,
+                        ./imegens/web/img-3_tab_@2x.jpg 2x
+                      "
                     />
                     <!-- Mobile -->
                     <source
-                      media="(min-width: 480px)"
-                      srcset="./imegens/Web/img-7_mob@1x.jpg 1x, ./imegens/Web/img-7_mob@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      srcset="./imegens/web/3_mob_@1x.jpg 1x, ./imegens/web/3_mob_@2x.jpg 2x"
                     />
 
-                    <img class="web__img" src="./imegens/Web/img-7_des@1x.jpg 1x" alt="" />
+                    <img class="web__img" src="./imegens/web/3_mob_@1x.jpg 1x" alt="" />
                   </picture>
 
                   <div class="web__thumb">
@@ -208,20 +277,23 @@
                     <!-- Desktop -->
                     <source
                       media="(min-width: 1200px)"
-                      srcset="./imegens/Web/img-6_des@1x.jpg 1x, ./imegens/Web/img-6_des@2x.jpg 2x"
+                      srcset="./imegens/web/img_4_des@1x.jpg 1x, ./imegens/web/img_4_des@2x.jpg 2x"
                     />
                     <!-- Tablet -->
                     <source
                       media="(min-width: 768px)"
-                      srcset="./imegens/Web/img-6_tab@1x.jpg 1x, ./imegens/Web/img-6_tab@2x.jpg 2x"
+                      srcset="
+                        ./imegens/web/img-4_tab_@1x.jpg 1x,
+                        ./imegens/web/img-4_tab_@2x.jpg 2x
+                      "
                     />
                     <!-- Mobile -->
                     <source
-                      media="(min-width: 480px)"
-                      srcset="./imegens/Web/img-6_mob@1x.jpg 1x, ./imegens/Web/img-6_mob@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      srcset="./imegens/web/4_mob_@1x.jpg 1x, ./imegens/web/4_mob_@2x.jpg 2x"
                     />
 
-                    <img class="web__img" src="./imegens/Web/img-6_des@1x.jpg 1x" alt="" />
+                    <img class="web__img" src="./imegens/web/4_mob_@1x.jpg 1x" alt="" />
                   </picture>
 
                   <div class="web__thumb">
@@ -246,20 +318,23 @@
                     <!-- Desktop -->
                     <source
                       media="(min-width: 1200px)"
-                      srcset="./imegens/Web/img-5_des@1x.jpg 1x, ./imegens/Web/img-5_des@2x.jpg 2x"
+                      srcset="./imegens/web/img_5_des@1x.jpg 1x, ./imegens/web/img_5_des@2x.jpg 2x"
                     />
                     <!-- Tablet -->
                     <source
                       media="(min-width: 768px)"
-                      srcset="./imegens/Web/img-5_tab@1x.jpg 1x, ./imegens/Web/img-5_tab@2x.jpg 2x"
+                      srcset="
+                        ./imegens/web/img-5_tab_@1x.jpg 1x,
+                        ./imegens/web/img-5_tab_@2x.jpg 2x
+                      "
                     />
                     <!-- Mobile -->
                     <source
-                      media="(min-width: 480px)"
-                      srcset="./imegens/Web/img-5_mob@1x.jpg 1x, ./imegens/Web/img-5_mob@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      srcset="./imegens/web/5_mob_@1x.jpg 1x, ./imegens/web/5_mob_@2x.jpg 2x"
                     />
 
-                    <img class="web__img" src="./imegens/Web/img-5_des@1x.jpg 1x" alt="" />
+                    <img class="web__img" src="./imegens/web/5_mob_@1x.jpg 1x" alt="" />
                   </picture>
 
                   <div class="web__thumb">
@@ -283,20 +358,23 @@
                     <!-- Desktop -->
                     <source
                       media="(min-width: 1200px)"
-                      srcset="./imegens/Web/img-4_des@1x.jpg 1x, ./imegens/Web/img-4_des@2x.jpg 2x"
+                      srcset="./imegens/web/img_6_des@1x.jpg 1x, ./imegens/web/img_6_des@2x.jpg 2x"
                     />
                     <!-- Tablet -->
                     <source
                       media="(min-width: 768px)"
-                      srcset="./imegens/Web/img-4_tab@1x.jpg 1x, ./imegens/Web/img-4_tab@2x.jpg 2x"
+                      srcset="
+                        ./imegens/web/img-6_tab_@1x.jpg 1x,
+                        ./imegens/web/img-6_tab_@2x.jpg 2x
+                      "
                     />
                     <!-- Mobile -->
                     <source
-                      media="(min-width: 480px)"
-                      srcset="./imegens/Web/img-4_mob@1x.jpg 1x, ./imegens/Web/img-4_mob@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      srcset="./imegens/web/6_mob_@1x.jpg 1x, ./imegens/web/6_mob_@2x.jpg 2x"
                     />
 
-                    <img class="web__img" src="./imegens/Web/img-4_des@1x.jpg 1x" alt="" />
+                    <img class="web__img" src="./imegens/web/6_mob_@1x.jpg 1x" alt="" />
                   </picture>
 
                   <div class="web__thumb">
@@ -320,20 +398,23 @@
                     <!-- Desktop -->
                     <source
                       media="(min-width: 1200px)"
-                      srcset="./imegens/Web/img-3_des@1x.jpg 1x, ./imegens/Web/img-3_des@2x.jpg 2x"
+                      srcset="./imegens/web/img_7_des@1x.jpg 1x, ./imegens/web/img_7_des@2x.jpg 2x"
                     />
                     <!-- Tablet -->
                     <source
                       media="(min-width: 768px)"
-                      srcset="./imegens/Web/img-3_tab@1x.jpg 1x, ./imegens/Web/img-3_tab@2x.jpg 2x"
+                      srcset="
+                        ./imegens/web/img-7_tab_@1x.jpg 1x,
+                        ./imegens/web/img-7_tab_@2x.jpg 2x
+                      "
                     />
                     <!-- Mobile -->
                     <source
-                      media="(min-width: 480px)"
-                      srcset="./imegens/Web/img-3_mob@1x.jpg 1x, ./imegens/Web/img-3_mob@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      srcset="./imegens/web/7_mob_@1x.jpg 1x, ./imegens/web/7_mob_@2x.jpg 2x"
                     />
 
-                    <img class="web__img" src="./imegens/Web/img-3_des@1x.jpg 1x" alt="" />
+                    <img class="web__img" src="./imegens/web/7_mob_@1x.jpg 1x" alt="" />
                   </picture>
 
                   <div class="web__thumb">
@@ -357,20 +438,23 @@
                     <!-- Desktop -->
                     <source
                       media="(min-width: 1200px)"
-                      srcset="./imegens/Web/img-2_des@1x.jpg 1x, ./imegens/Web/img-2_des@2x.jpg 2x"
+                      srcset="./imegens/web/img_8_des@1x.jpg 1x, ./imegens/web/img_8_des@2x.jpg 2x"
                     />
                     <!-- Tablet -->
                     <source
                       media="(min-width: 768px)"
-                      srcset="./imegens/Web/img-2_tab@1x.jpg 1x, ./imegens/Web/img-2_tab@2x.jpg 2x"
+                      srcset="
+                        ./imegens/web/img-8_tab_@1x.jpg 1x,
+                        ./imegens/web/img-8_tab_@2x.jpg 2x
+                      "
                     />
                     <!-- Mobile -->
                     <source
-                      media="(min-width: 480px)"
-                      srcset="./imegens/Web/img-2_mob@1x.jpg 1x, ./imegens/Web/img-2_mob@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      srcset="./imegens/web/8_mob_@1x.jpg 1x, ./imegens/web/8_mob_@2x.jpg 2x"
                     />
 
-                    <img class="web__img" src="./imegens/Web/img-2_des@1x.jpg 1x" alt="" />
+                    <img class="web__img" src="./imegens/web/8_mob_@1x.jpg 1x" alt="" />
                   </picture>
 
                   <div class="web__thumb">
@@ -394,18 +478,23 @@
                     <!-- Desktop -->
                     <source
                       media="(min-width: 1200px)"
-                      srcset="./imegens/Web Studio/img-9_des@1x.jpg 1x, ./imegens/Web Studio/img-9_des@2x.jpg 2x"
+                      srcset="./imegens/web/img_9_des@1x.jpg 1x, ./imegens/web/img_9_des@2x.jpg 2x"
                     />
                     <!-- Tablet -->
-                    <source media="(min-width: 768px)" srcset="./imegens/Web/img-9_tab@1x.jpg 1x,
-                    ./imegens/Web/img-9_tab@2x.jpg 2x" /9
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./imegens/web/img-9_tab_@1x.jpg 1x,
+                        ./imegens/web/img-9_tab_@2x.jpg 2x
+                      "
+                    />
                     <!-- Mobile -->
                     <source
-                      media="(min-width: 480px)"
-                      srcset="./imegens/Web/img-9_mob@1x.jpg 1x, ./imegens/Web/img-1_mob@2x.jpg 2x"
+                      media="(max-width: 767px)"
+                      srcset="./imegens/web/9_mob_@1x.jpg 1x, ./imegens/web/9_mob_@2x.jpg 2x"
                     />
 
-                    <img class="web__img" src="./imegens/Web/img-9_des@1x.jpg 1x" alt="" />
+                    <img class="web__img" src="./imegens/web/9_mob_@1x.jpg 1x" alt="" />
                   </picture>
 
                   <div class="web__thumb">
@@ -528,5 +617,12 @@
         </form>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

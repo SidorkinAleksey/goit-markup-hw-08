@@ -59,13 +59,14 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: var(--border-card-cl);
+  flex-wrap: wrap;
 }
 
 .web__box {
   border-left: 1px solid #ececec;
   border-bottom: 1px solid #ececec;
   border-right: 1px solid #ececec;
-  padding: 20px 24px;
+  padding: 20px 18px;
 }
 
 .web__link {
